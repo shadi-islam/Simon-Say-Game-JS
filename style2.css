@@ -1,0 +1,112 @@
+/* General body styles */
+.bodyTemp{
+    text-align: center;
+    background-color: red;
+}
+
+.bodyMain {
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 300% 300%;
+    animation: gradientBackground 8s infinite ease-in-out;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animated gradient background */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Button styles */
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: 5px solid #000;
+    margin: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Button container */
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual button colors */
+.red {
+    background-color: #d95980;
+}
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+/* Flash animations */
+.gameFlash {
+    background-color: #fff !important;
+    animation: flashEffect 0.3s ease-in-out;
+}
+
+.userFlash {
+    background-color: #63e664 !important;
+    animation: flashEffect 0.3s ease-in-out;
+}
+
+/* Flash effect */
+@keyframes flashEffect {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+}
